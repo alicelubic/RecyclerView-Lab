@@ -3,6 +3,7 @@ package example.com.recyclerviewlab;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
@@ -11,6 +12,7 @@ import android.widget.TextView;
 public class CustomViewHolder2 extends RecyclerView.ViewHolder{
     public TextView mTextView1,mTextView2, mTextView3;
     public CheckBox mCheckBox;
+    public RelativeLayout mLayout2;
 
     public CustomViewHolder2(View itemView) {
         super(itemView);
@@ -19,5 +21,6 @@ public class CustomViewHolder2 extends RecyclerView.ViewHolder{
         mTextView2 = (TextView) itemView.findViewById(R.id.textview_title2);
         mTextView3 = (TextView) itemView.findViewById(R.id.textview_desc2);
         mCheckBox = (CheckBox) itemView.findViewById(R.id.checkbox);
+        mLayout2 = (RelativeLayout) itemView.findViewById(R.id.layout2);
     }
 }

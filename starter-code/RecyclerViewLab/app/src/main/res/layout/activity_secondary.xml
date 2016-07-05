@@ -1,49 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<android.support.v7.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="30dp">
+    android:id="@+id/recyclerview-main">
 
-
-    <TextView
-        android:id="@+id/textview_color2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#6b8e23"
-        android:padding="10dp"
-        android:text="     "
-        android:layout_alignTop="@+id/textview_title2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:id="@+id/textview_title2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="Title Text"
-        android:layout_toRightOf="@+id/textview_color2"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/textview_desc2"
-        android:layout_alignEnd="@+id/textview_desc2" />
-    <TextView
-        android:id="@+id/textview_desc2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="19sp"
-        android:text="Description Text"
-
-        android:layout_below="@+id/textview_color2"
-        android:layout_toRightOf="@+id/textview_color2"
-        android:layout_toEndOf="@+id/textview_color2" />
-    <CheckBox
-        android:id="@+id/checkbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true" />
-
-
-
-
-</RelativeLayout>
+</android.support.v7.widget.RecyclerView>

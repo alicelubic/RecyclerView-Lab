@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(linearLayoutManager);
 
         List<CustomObject1> customObjectsList1 = new ArrayList<>();
-        customObjectsList1.add(new CustomObject1("Hi", "idk", "#FFFFFF"));
-        customObjectsList1.add(new CustomObject1("title", "description", "color"));
+        customObjectsList1.add(new CustomObject1("Hi", "idk", "color"));
+        customObjectsList1.add(new CustomObject1("title", "description", "#006400"));
         customObjectsList1.add(new CustomObject1("title", "description", "color"));
         customObjectsList1.add(new CustomObject1("title", "description", "color"));
         customObjectsList1.add(new CustomObject1("title", "description", "color"));
