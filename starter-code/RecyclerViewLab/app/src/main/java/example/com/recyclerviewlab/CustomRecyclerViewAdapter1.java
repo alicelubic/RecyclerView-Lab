@@ -13,7 +13,11 @@ import java.util.List;
  * Created by owlslubic on 7/5/16.
  */
 public class CustomRecyclerViewAdapter1 extends RecyclerView.Adapter<CustomViewHolder1>{
+    List<CustomObject1> customObjectList1;
 
+    public CustomRecyclerViewAdapter1(List<CustomObject1> customObjects1){
+        customObjectList1 = customObjects1;
+    }
 
     @Override
     public CustomViewHolder1 onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -25,13 +29,15 @@ public class CustomRecyclerViewAdapter1 extends RecyclerView.Adapter<CustomViewH
 
     @Override
     public void onBindViewHolder(CustomViewHolder1 holder, final int position) {
-        
+        CustomObject1 customObject1 = customObjectList1.get(position);
+
+
 
         }
 
 
     @Override
     public int getItemCount() {
-        return 0;
+        return customObjectList1.size();
     }
 }
