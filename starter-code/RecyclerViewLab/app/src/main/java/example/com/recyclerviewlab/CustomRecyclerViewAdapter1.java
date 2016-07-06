@@ -1,5 +1,6 @@
 package example.com.recyclerviewlab;
 
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.text.Layout;
 import android.view.LayoutInflater;
@@ -30,7 +31,7 @@ public class CustomRecyclerViewAdapter1 extends RecyclerView.Adapter<CustomViewH
 
     @Override
     public void onBindViewHolder(CustomViewHolder1 holder, final int position) {
-        holder.mTextView1.setBackgroundColor(customObjectList1.get(position).getmColor(‎)).parseInteger;
+//        holder.mTextView1.setBackgroundColor(ContextCompat.getColor(holder.getContext(),customObjectList1.get(position).getmColor(‎)));
         holder.mTextView2.setText(customObjectList1.get(position).getmTitle());
         holder.mTextView3.setText(customObjectList1.get(position).getmDescription());
         holder.mLayout1.setOnClickListener(new View.OnClickListener(){

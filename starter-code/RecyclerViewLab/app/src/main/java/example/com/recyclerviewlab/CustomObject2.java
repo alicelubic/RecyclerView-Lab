@@ -8,12 +8,12 @@ public class CustomObject2 {
     String mTitle, mDescription, mColor;
     boolean mCheck;
 
-    public CustomObject2(String title, String description, String color, boolean check) {
+    public CustomObject2(String title, String description, String color) {
         //he has it as this.mTitle = title..?
         mTitle = title;
         mDescription = description;
         mColor = color;
-        mCheck = check;
+        mCheck = false;
     }
 
     public String getmTitle() {

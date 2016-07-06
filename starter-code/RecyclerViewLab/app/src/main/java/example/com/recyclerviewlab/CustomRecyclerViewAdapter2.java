@@ -1,5 +1,6 @@
 package example.com.recyclerviewlab;
 
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,7 +30,10 @@ public class CustomRecyclerViewAdapter2 extends RecyclerView.Adapter<CustomViewH
 
     @Override
     public void onBindViewHolder(final CustomViewHolder2 holder, final int position) {
-        holder.mTextView1.setBackgroundColor(customObjectList2.get(position).getmColor(‎)).parseInteger;
+//        holder.mTextView1.setBackgroundColor(ContextCompat.getColor(holder.getContext(),customObjectList2.get(position).getmColor(‎)));
+        //THERE IS A SYSTEM ERROR PREVENTING ME FROM RUNNING THIS LINE, SOMETHING IN R.JAVA
+
+
         holder.mTextView2.setText(customObjectList2.get(position).getmTitle());
         holder.mTextView3.setText(customObjectList2.get(position).getmDescription());
         holder.mLayout2.setOnClickListener(new View.OnClickListener(){
@@ -49,9 +53,7 @@ public class CustomRecyclerViewAdapter2 extends RecyclerView.Adapter<CustomViewH
 
 
 
-
     }
-
     @Override
     public int getItemCount() {
         return customObjectList2.size();
